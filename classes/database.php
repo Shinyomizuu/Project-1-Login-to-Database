@@ -22,7 +22,7 @@ class Database {
         $this->mysqli->close();
     }
 
-
+    
 
 }
 ?>

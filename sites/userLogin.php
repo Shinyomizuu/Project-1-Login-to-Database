@@ -1,5 +1,6 @@
 <?php 
-require_once("modules/config.php")
+include("../modules/config.php"); // Hier wird die Konfiguration eingebunden
+include("../sites/navbar.php"); // Hier wird die Navbar eingebunden
 ?>
 
 <!DOCTYPE html>
@@ -8,7 +9,7 @@ require_once("modules/config.php")
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Register / Login</title>
-    <link rel="stylesheet" href="assets/styles.css">
+    <link rel="stylesheet" href="../assets/styles.css">
 
 </head>
 <body>
@@ -62,6 +63,6 @@ require_once("modules/config.php")
         </div>
     </div>
 
-   <script src="assets/js/loginswitch.js"></script>
+   <script src="../assets/js/loginswitch.js"></script>
 </body>
 </html>

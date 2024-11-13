@@ -1,6 +1,6 @@
 <?php
 
-require_once('classes/database.php');
+require_once('../classes/database.php');
 
 define('DB_HOST', 'localhost');
 define('DB_USER', 'root');
