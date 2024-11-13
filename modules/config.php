@@ -23,13 +23,12 @@ function createDatabase($conn, $database) {
 // Hauptlogik zur Überprüfung und Erstellung der Datenbank
 if (!databaseExists($conn, $database)) {
     if (createDatabase($conn, $database)) {
-        echo "Datenbank '$database' erfolgreich erstellt.";
+        //echo "Datenbank '$database' erfolgreich erstellt.";
     } else {
-        echo "Fehler beim Erstellen der Datenbank: " . $conn->error;
+        $conn->error;
     }
 } else {
-    echo "Datenbank '$database' existiert bereits.";
+    // echo "Datenbank '$database' existiert bereits.";
 }
-
 
 ?>
