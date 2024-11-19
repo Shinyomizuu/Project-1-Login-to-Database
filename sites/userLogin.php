@@ -1,5 +1,7 @@
 <?php 
 include("../modules/config.php"); // Hier wird die Konfiguration eingebunden
+
+
 include("../sites/navbar.php"); // Hier wird die Navbar eingebunden
 ?>
 

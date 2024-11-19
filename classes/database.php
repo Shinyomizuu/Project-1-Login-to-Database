@@ -1,7 +1,7 @@
 <?php
 class Database {
     private $mysqli;
-    //test
+    //test 
     public function __construct() {
         $this->mysqli = new mysqli(DB_HOST, DB_USER, DB_PASSWORD, DB_NAME);
 
@@ -16,6 +16,19 @@ class Database {
 
     public function getDatabase() {
         return $this->mysqli;
+    }
+
+    public function createUser($username,$password, $password_repeat, $email) {
+
+        if($password_repeat == $password_repeat){
+            return "Die Passwörter stimmen nicht überein";
+        }
+
+    
+    }
+
+    public function dataBaseExist(){
+        
     }
 
     public function __destruct() {
