@@ -1,8 +1,15 @@
 <?php 
-include("../modules/config.php"); // Hier wird die Konfiguration eingebunden
-
-
+include("../modules/config.php"); 
 include("../sites/navbar.php"); // Hier wird die Navbar eingebunden
+
+$action = $_POST['action'] ?? null; // 'register' oder 'login'
+
+if ($action === 'register') {
+    echo "Funktioniert";
+} elseif ($action === 'login') {
+    echo "Login ausführen";
+}
+
 ?>
 
 <!DOCTYPE html>
@@ -37,7 +44,7 @@ include("../sites/navbar.php"); // Hier wird die Navbar eingebunden
                         <label for="email">E-Mail:</label>
                         <input type="email" id="email" name="email" placeholder="Gib deine E-Mail-Adresse ein" required>
                     </div>
-                    <button type="submit">Senden</button>
+                    <button type="submit" name ="action" value="register">Senden</button>
                 </form>
                 <div class="login-link">
                     <p>Bereits ein Konto? <a href="#" id="show-login">Login</a></p>
@@ -47,7 +54,7 @@ include("../sites/navbar.php"); // Hier wird die Navbar eingebunden
             <!-- Loginformular -->
             <div id="login-form" class="hidden">
                 <h2>Login</h2>
-                <form action="/login" method="POST">
+                <form action="" method="POST">
                     <div class="form-group">
                         <label for="login-email">E-Mail:</label>
                         <input type="email" id="login-email" name="email" placeholder="Gib deine E-Mail-Adresse ein" required>
@@ -56,7 +63,7 @@ include("../sites/navbar.php"); // Hier wird die Navbar eingebunden
                         <label for="login-password">Password:</label>
                         <input type="password" id="login-password" name="password" placeholder="Password" required>
                     </div>
-                    <button type="submit">Einloggen</button>
+                    <button type="submit" name ="action" value="login">Einloggen</button>
                 </form>
                 <div class="login-link">
                     <p>Noch kein Konto? <a href="#" id="show-register">Register</a></p>

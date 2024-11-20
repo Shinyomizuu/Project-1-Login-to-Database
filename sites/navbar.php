@@ -60,8 +60,7 @@
 </head>
 <body>
 
-<nav>
-    
+<nav> 
     <div class="img-wrapper">
         <img src="../assets/images/Wirtschaftskammer_Österreich_logo.svg.png" alt="Logo">
     </div>
