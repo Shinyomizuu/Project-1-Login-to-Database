@@ -12,21 +12,13 @@ class User{
 
     public $password;
 
-    public Role $role;   
 
 
-    public function __construct(string $username, string $email, string $password, Role $role = Role::USER){
+    public function __construct(string $username, string $email, string $password, ){
         $this->username = $username;
         $this->email = $email;
         $this->password = $password;
-        $this->role = $role;
+ 
     }
-
-
-    public function getRole(): Role {
-        return $this->role;
-    }
-
 }
-
 ?>

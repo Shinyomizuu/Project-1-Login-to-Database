@@ -1,11 +1,16 @@
 <?php 
 include("../modules/config.php"); 
-include("../sites/navbar.php"); // Hier wird die Navbar eingebunden
+include("../sites/navbar.php");
+include("../includes/autoloader.inc.php");
+
+
+$test = new User("test", "test","test");
 
 $action = $_POST['action'] ?? null; // 'register' oder 'login'
 
 if ($action === 'register') {
     echo "Funktioniert";
+   
 } elseif ($action === 'login') {
     echo "Login ausführen";
 }
