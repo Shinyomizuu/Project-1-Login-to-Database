@@ -8,13 +8,7 @@ include("../sites/navbar.php"); // Hier wird die Navbar eingebunden
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Willkommen zur LAP</title>
-    <link rel="stylesheet" href="../css/bootstrap.min.css">
-    <style>
-        body{
-            margin: 0;
-            padding: 0;
-        }
-    </style>
+    <link rel="stylesheet" href="../assets/css/bootstrap.min.css">
 </head>
 
 <body>
