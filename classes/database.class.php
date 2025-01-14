@@ -9,7 +9,7 @@ class Database {
             throw new Exception("Failed to connect to MySQL: " . $this->mysqli->connect_error);
         }
         else{
-            echo("Connection successful");
+            //echo("Connection successful");
         }
         
     }
